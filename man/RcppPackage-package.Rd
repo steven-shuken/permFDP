@@ -1,34 +1,31 @@
-\name{RcppPackage-package}
-\alias{RcppPackage-package}
-\alias{RcppPackage}
+\name{permFDP-package}
+\alias{permFDP-package}
+\alias{permFDP}
 \docType{package}
 \title{
-  A short title line describing what the package does
+  Rejection threshold correction using permutation-based FDP estimation.
 }
 \description{
-  A more detailed description of what the package does. A length
-  of about one to five lines is recommended.
+  <Paragraph under construction.>
 }
 \details{
-  This section should provide a more detailed overview of how to use the
-  package, including the most important functions.
+  <Section under construction.>
 }
 \author{
-Your Name, email optional.
+Steven R. Shuken
 
-Maintainer: Your Name <your@email.com>
+Maintainer: Steven R. Shuken <srshuken@gmail.com>
 }
 \references{
-  This optional section can contain literature or other references for
-  background information.
+  Shuken and McNerney 2021
 }
 \keyword{ package }
 \seealso{
-  Optional links to other man pages
+  <Under construction>
 }
 \examples{
   \dontrun{
      ## Optional simple examples of the most important functions
-     ## These can be in \dontrun{} and \donttest{} blocks.   
+     ## These can be in \dontrun{} and \donttest{} blocks.
   }
 }
