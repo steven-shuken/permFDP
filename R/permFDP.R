@@ -1,7 +1,7 @@
 library(Rcpp)
 library(BH)
 Sys.setenv("PKG_CXXFLAGS"="-std=c++17")
-sourceCpp("../src/permFDP.cpp")
+sourceCpp("src/permFDP.cpp")
 
 #' Permutation-Based FDP Method for Rejection Threshold Correction
 #'
