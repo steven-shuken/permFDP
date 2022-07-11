@@ -2,18 +2,18 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 designTTest <- function(ints, design) {
-    .Call(`_RcppPackage_designTTest`, ints, design)
+    .Call(`_permFDP_designTTest`, ints, design)
 }
 
 permFDRAdjust <- function(expPs, threshold, design, intOnly, nPerms, nc, nt) {
-    .Call(`_RcppPackage_permFDRAdjust`, expPs, threshold, design, intOnly, nPerms, nc, nt)
+    .Call(`_permFDP_permFDRAdjust`, expPs, threshold, design, intOnly, nPerms, nc, nt)
 }
 
 permFDRAdjustCpp <- function(expPs, threshold, design, intMatrix, nPerms, nc, nt) {
-    .Call(`_RcppPackage_permFDRAdjustCpp`, expPs, threshold, design, intMatrix, nPerms, nc, nt)
+    .Call(`_permFDP_permFDRAdjustCpp`, expPs, threshold, design, intMatrix, nPerms, nc, nt)
 }
 
 rcpp_hello_world <- function() {
-    .Call(`_RcppPackage_rcpp_hello_world`)
+    .Call(`_permFDP_rcpp_hello_world`)
 }
 
