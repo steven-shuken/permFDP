@@ -17,7 +17,7 @@ Steven R. Shuken
 Maintainer: Steven R. Shuken <srshuken@gmail.com>
 }
 \references{
-  Shuken and McNerney 2021
+  Shuken and McNerney 2023
 }
 \keyword{ package }
 \seealso{
