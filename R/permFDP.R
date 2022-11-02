@@ -13,10 +13,20 @@ sourceCpp("src/permFDP.cpp")
 #' @param myDesign Vector of 1s and 2s specifying which columns in intOnly belong to the control group (1) and which belong to the test group (2).
 #' @param intOnly A data frame. Each column is a sample, each row is an analyte.
 #' @param nPerms The number of permutations to perform. At least 100 is recommended.
-#' @keywords p-values, FDP, FDR, permutation
+#' @keywords p-values FDP FDR permutation
 #' @export
 #' @examples
-#' cat_function()
+#' controlVals = matrix(rnorm(300), ncol = 3, nrow = 100)
+#' testVals = matrix(rnorm(300, mean = 3), ncol = 3, nrow = 100)
+#' intOnly = data.frame(cbind(controlVals, testVals))
+#' myDesign = c(1,1,1,2,2,2)
+#' pVals = c()
+#' for (row in 1:nrow(intOnly)) {
+#' pVals = c(pVals, t.test(intOnly[row, 1:3], intOnly[row, 4:6])$p.value)
+#' }
+#' threshold = 0.05
+#' corrThreshold = permFDP::permFDP.adjust.threshold(pVals, threshold, myDesign, intOnly, 100)
+#' corrThreshold
 
 permFDP.adjust.threshold = function(pVals, threshold, myDesign, intOnly, nPerms) {
   pVals = pVals[order(pVals)]
