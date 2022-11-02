@@ -23,9 +23,19 @@ It returns the new threshold for P-value rejection.
 It uses the Rcpp and BH packages to leverage fast C++ code.
 }
 \examples{
-cat_function()
+controlVals = matrix(rnorm(300), ncol = 3, nrow = 100)
+testVals = matrix(rnorm(300, mean = 3), ncol = 3, nrow = 100)
+intOnly = data.frame(cbind(controlVals, testVals))
+myDesign = c(1,1,1,2,2,2)
+pVals = c()
+for (row in 1:nrow(intOnly)) {
+pVals = c(pVals, t.test(intOnly[row, 1:3], intOnly[row, 4:6])$p.value)
 }
-\keyword{FDP,}
-\keyword{FDR,}
-\keyword{p-values,}
+threshold = 0.05
+corrThreshold = permFDP::permFDP.adjust.threshold(pVals, threshold, myDesign, intOnly, 100)
+corrThreshold
+}
+\keyword{FDP}
+\keyword{FDR}
+\keyword{p-values}
 \keyword{permutation}
