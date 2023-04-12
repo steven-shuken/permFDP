@@ -13,7 +13,3 @@ permFDRAdjustCpp <- function(expPs, threshold, design, intMatrix, nPerms, nc, nt
     .Call(`_permFDP_permFDRAdjustCpp`, expPs, threshold, design, intMatrix, nPerms, nc, nt)
 }
 
-rcpp_hello_world <- function() {
-    .Call(`_permFDP_rcpp_hello_world`)
-}
-

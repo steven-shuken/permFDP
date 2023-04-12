@@ -1,0 +1,4 @@
+#!/bin/sh
+
+## remove compilation artifacts
+rm -f src/*.o src/*.so
