@@ -1,13 +1,14 @@
 Package: permFDP
-Type: Package
 Title: Rejection Threshold Correction Using Permutation-Based FDP Estimation
 Version: 0.1.0
-Date: 2022-07-11
-Author: Steven R. Shuken
-Maintainer: Steven R. Shuken <srshuken@gmail.com>
-Description: One paragraph description of what the package does
-       as one or more full sentences.
+Author: Steven R. Shuken <srshuken@gmail.com>
+Authors@R: c(person("Steven", "Shuken", email = "srshuken@gmail.com", role = c("aut", "cre")),
+              person("Michael", "Heming", email = "mhem@mailbox.org", role = "ctb")
+       )
+Description: An R package for correcting p-values for multiple hypothesis testing in 
+       comparative quantitative omics experiments using permutation-based FDP estimation.
 License: GPL (>= 2)
+Encoding: UTF-8
 Imports: Rcpp (>= 1.0.9)
 LinkingTo: Rcpp, BH
-RoxygenNote: 7.2.1
+RoxygenNote: 7.3.3
