@@ -12,4 +12,3 @@ permFDRAdjust <- function(expPs, threshold, design, intOnly, nPerms, nc, nt) {
 permFDRAdjustCpp <- function(expPs, threshold, design, intMatrix, nPerms, nc, nt) {
     .Call(`_permFDP_permFDRAdjustCpp`, expPs, threshold, design, intMatrix, nPerms, nc, nt)
 }
-
