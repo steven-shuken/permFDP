@@ -1,6 +1,6 @@
 Package: permFDP
 Title: Rejection Threshold Correction Using Permutation-Based FDP Estimation
-Version: 0.1.0
+Version: 0.2.0
 Author: Steven R. Shuken <srshuken@gmail.com>
 Authors@R: c(person("Steven", "Shuken", email = "srshuken@gmail.com", role = c("aut", "cre")),
               person("Michael", "Heming", email = "mhem@mailbox.org", role = "ctb")
